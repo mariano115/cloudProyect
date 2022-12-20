@@ -95,7 +95,7 @@ io.on("connection", async (socket) => {
 /* const args = parseArgs(process.argv.slice(2)); */
 const args = parseArgs(process.argv.slice(2), {default: {PORT: '8080'}})
 /* // console.log(args.PORT) */
-const PORT = args.PORT
+const PORT = args.PORT || process.env.PORT || 8080;
 /* const PORT = args._[0] || 8080; */
 
 mongoose.connect(
