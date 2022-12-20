@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<body>
+  <div style="
+        background-color: rgb(191, 191, 209);
+        width: 50%;
+        height: auto;
+      " id="nombreLogin">
+    <h1 style="color: blue">Informacion requerida</h1>
+    <p>Argumentos de entrada: <%= infoData.arguments %></p>
+    <p>Sistema Operativo: <%= infoData.plataform %></p>
+    <p>Version de Node: <%= infoData.nodeVersion %></p>
+    <p>Memoria total Reservada: <%= infoData.rss %></p>
+    <p>Path de ejecucion: <%= infoData.execPath %></p>
+    <p>Process Id: <%= infoData.IdProcess %></p>
+    <p>Carpeta del Proyecto: <%= infoData.proyectFolder %></p>
+    <p>Numero de Hilos: <%= infoData.numThreads %></p>
+  </div>
+</body>
+</html>
